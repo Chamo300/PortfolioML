@@ -3,60 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stickman Page</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            text-align: center;
-        }
-        .stickman {
-            margin: 20px 0;
-        }
-    </style>
+    <meta name="description" content="Moises Lopez - Software Engineer Portfolio">
+    <title>Moises Lopez - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to the Stickman Page!</h1>
-        <svg class="stickman" width="300" height="400">
-            <!-- Head -->
-            <circle cx="100" cy="50" r="30" stroke="black" stroke-width="3" fill="none" />
-            <!-- Body -->
-            <line x1="100" y1="80" x2="100" y2="200" stroke="black" stroke-width="3" />
-            <!-- Arms -->
-            <line x1="100" y1="120" x2="50" y2="160" stroke="black" stroke-width="3" />
-            <line x1="100" y1="120" x2="150" y2="160" stroke="black" stroke-width="3" />
-            <!-- Legs -->
-            <line x1="100" y1="200" x2="60" y2="280" stroke="black" stroke-width="3" />
-            <line x1="100" y1="200" x2="140" y2="280" stroke="black" stroke-width="3" />
+    <header>
+        <div class="container">
+            <h1>Moises Lopez</h1>
+            <p>Software Engineer | Problem Solver | Continuous Learner</p>
+            <div class="contact-info">
+                <p>📞 +1 956-521-1172 | 📧 <a href="mailto:Moiseshdmm@gmail.com">Moiseshdmm@gmail.com</a> | 🏠 Brownsville, Texas</p>
+            </div>
+        </div>
+    </header>
 
-            <!-- Soccer Ball -->
-            <circle cx="200" cy="350" r="20" stroke="black" stroke-width="2" fill="white" />
-            <!-- Hexagons for the soccer ball -->
-            <polygon points="200,330 193,340 200,350 207,340" stroke="black" fill="black" />
-            <polygon points="180,350 190,350 185,360 175,360" stroke="black" fill="black" />
-            <polygon points="220,350 230,350 225,360 215,360" stroke="black" fill="black" />
-            <polygon points="200,370 193,360 200,350 207,360" stroke="black" fill="black" />
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
 
-            <!-- Baseball -->
-            <circle cx="250" cy="100" r="15" stroke="black" stroke-width="2" fill="white" />
-            <!-- Stitches for the baseball -->
-            <path d="M235,100 q10,-10 30,0" stroke="red" fill="none" />
-            <path d="M235,100 q10,10 30,0" stroke="red" fill="none" />
-            <!-- Stitch lines -->
-            <line x1="242" y1="95" x2="245" y2="90" stroke="red" stroke-width="1" />
-            <line x1="258" y1="95" x2="255" y2="90" stroke="red" stroke-width="1" />
-            <line x1="242" y1="105" x2="245" y2="110" stroke="red" stroke-width="1" />
-            <line x1="258" y1="105" x2="255" y2="110" stroke="red" stroke-width="1" />
-        </svg>
-        <p>This is a simple stickman drawing with a soccer ball and a baseball using SVG.</p>
-    </div>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a dedicated software engineer eager to contribute to impactful technology. With a strong foundation in problem-solving and experience in setting up and configuring systems, I have led small programming projects and am now looking to be part of larger groups to continue learning. I am committed to continuous learning and ready to leverage my skills to tackle more complex challenges and drive technological advancements.</p>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <p><strong>The University of Texas Rio Grande Valley (UTRGV)</strong> | Bachelor of Science in Computer Science<br>
+            <em>May 2020 - May 2024</em></p>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="job">
+                <h3>CS Teacher Assistant</h3>
+                <p><strong>The University of Texas Rio Grande Valley, Brownsville, TX</strong> | Sep 2022 - Present</p>
+                <ul>
+                    <li>Guided students on significant projects involving APIs and web development using C++, C, Python, and Java.</li>
+                    <li>Assisted with object-oriented programming and databases, enhancing students' understanding of these topics.</li>
+                    <li>Collaborated with faculty to refine course materials and foster interactive learning experiences.</li>
+                    <li>Developed communication, adaptability, and facilitation skills while enhancing leadership and responsibility in a collaborative learning environment.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>After School Enrichment Specialist</h3>
+                <p><strong>IDEA Robindale, Brownsville, TX</strong> | Aug 2023 - Jan 2024</p>
+                <ul>
+                    <li>Empowered priority students through tailored after-school programs focused on academic support, enrichment, and college/career readiness.</li>
+                    <li>Collaborated with school leadership to shape a positive learning culture.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Personal Projects</h2>
+            <div class="project">
+                <h3>College CampusGeoGuessr: Exploring Campus Virtually</h3>
+                <ul>
+                    <li>Led a team of 3 developers. The app was used by over 100 students on campus, receiving positive feedback.</li>
+                    <li>Developed CampusExplorer, a web app inspired by GeoGuessr for exploring the college campus.</li>
+                    <li>Utilized Visual Studio, Python, and the Flask framework to create an interactive experience.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>VisionChat: Real-Time Question-Answering with CV2 and ChatGPT</h3>
+                <ul>
+                    <li>Developed VisionChat, leveraging Python's Pytesseract to capture questions displayed on a screen through a webcam.</li>
+                    <li>Integrated with the ChatGPT API to process these questions and generate instant responses.</li>
+                    <li>Designed for efficiency, accuracy, and real-time interaction, streamlining information retrieval.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills & Languages</h2>
+            <div class="skills-bar">
+                <p>C++</p>
+                <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+
+                <p>Python</p>
+                <div class="bar"><div class="progress" style="width: 85%;"></div></div>
+
+                <p>HTML</p>
+                <div class="bar"><div class="progress" style="width: 75%;"></div></div>
+
+                <p>Java</p>
+                <div class="bar"><div class="progress" style="width: 70%;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>References available upon request.</p>
+            <button id="backToTop">Back to Top</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
