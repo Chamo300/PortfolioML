@@ -25,7 +25,7 @@
 <body>
     <div class="container">
         <h1>Welcome to the Stickman Page!</h1>
-        <svg class="stickman" width="200" height="400">
+        <svg class="stickman" width="300" height="400">
             <!-- Head -->
             <circle cx="100" cy="50" r="30" stroke="black" stroke-width="3" fill="none" />
             <!-- Body -->
@@ -36,8 +36,27 @@
             <!-- Legs -->
             <line x1="100" y1="200" x2="60" y2="280" stroke="black" stroke-width="3" />
             <line x1="100" y1="200" x2="140" y2="280" stroke="black" stroke-width="3" />
+
+            <!-- Soccer Ball -->
+            <circle cx="200" cy="350" r="20" stroke="black" stroke-width="2" fill="white" />
+            <!-- Hexagons for the soccer ball -->
+            <polygon points="200,330 193,340 200,350 207,340" stroke="black" fill="black" />
+            <polygon points="180,350 190,350 185,360 175,360" stroke="black" fill="black" />
+            <polygon points="220,350 230,350 225,360 215,360" stroke="black" fill="black" />
+            <polygon points="200,370 193,360 200,350 207,360" stroke="black" fill="black" />
+
+            <!-- Baseball -->
+            <circle cx="250" cy="100" r="15" stroke="black" stroke-width="2" fill="white" />
+            <!-- Stitches for the baseball -->
+            <path d="M235,100 q10,-10 30,0" stroke="red" fill="none" />
+            <path d="M235,100 q10,10 30,0" stroke="red" fill="none" />
+            <!-- Stitch lines -->
+            <line x1="242" y1="95" x2="245" y2="90" stroke="red" stroke-width="1" />
+            <line x1="258" y1="95" x2="255" y2="90" stroke="red" stroke-width="1" />
+            <line x1="242" y1="105" x2="245" y2="110" stroke="red" stroke-width="1" />
+            <line x1="258" y1="105" x2="255" y2="110" stroke="red" stroke-width="1" />
         </svg>
-        <p>This is a simple stickman drawing using SVG.</p>
+        <p>This is a simple stickman drawing with a soccer ball and a baseball using SVG.</p>
     </div>
 </body>
 </html>
